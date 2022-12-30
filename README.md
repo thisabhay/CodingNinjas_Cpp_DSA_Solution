@@ -1,2 +1,2 @@
-# CodingNinjas_C-
+# CodingNinjas_C++
 C++ DSA Repository
