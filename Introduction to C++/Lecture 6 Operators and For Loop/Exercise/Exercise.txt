@@ -1,0 +1,190 @@
+1.#include <iostream>
+using namespace std;
+int main() 
+{    
+         int x, y = 1;
+         x = 10;
+         if (x != 10 && x / 0 == 0)
+            cout << y;
+         else
+             cout << ++y;
+} 
+Ans- 2
+2. #include <iostream>
+using namespace std;
+int main()
+{   
+    int x = 15;
+    int y = x++;
+    int z = ++x;
+    cout << y << “ “ << z;
+}
+Ans 15 17
+3. #include <iostream>
+using namespace std;
+int main() 
+{        
+         int g = 3;
+         cout << (++g * 8);
+} 
+Ans- 32
+4. #include <iostream>
+using namespace std;
+int main()
+{
+    int x = 10;
+    int y = 20;
+    if(x++ > 10 && ++y > 20 ){
+    cout << "Inside if ";
+    } else{
+    cout << "Inside else ";
+    }
+    cout << x << “ “ << y;
+}
+Ans- Inside else 11 20
+5. #include <iostream>
+using namespace std;
+int main()
+{
+    int x = 10;
+    int y = 20;
+    if(x++ > 10 || ++y > 20 ){
+    cout << "Inside if ";
+    } else{
+    cout << "Inside else ";
+    }
+    cout << x << “ “ << y;
+}
+Ans- Inside if 11 21
+6.What will be the output the following code ?
+for(int i = 0; i < 5; i = i + 1){
+    cout << i << " ";
+    i = i + 1;
+}
+Ans- 024
+7.What will be the output the following code?
+for(int i = 1; i < 5; i = i + 1){
+    cout << i << " ";
+    i = i - 1;
+}
+Ans- Infinite 1s
+8.What will be the output ?
+for(int i = 0; i < 2; i = i + 1) {
+     for(int j = 0; j < 2; j = j + 1) {
+          if (j == 1)
+              break;
+          cout << j << " ";
+      }
+ } 
+Ans- 00
+9.What will be the output ?
+for(int i = 0; i < 5; i = i + 1) {
+     if(i == 2) 
+           continue;
+    cout << i << " ";
+ } 
+Ans- 0134
+10. Which of these jump statements can skip processing remainder of code in its body for a particular iteration ?
+Ans- continue
+11.int i = 1;
+while(i < 5) {
+    if(i == 3) {
+        break;
+    }
+    cout << i << " ";
+    i++;
+}
+Ans- 12
+12.int i = 1;
+while(i < 5) {
+    if(i == 3) {
+        continue;
+    }
+    cout << i << " ";
+    i++;
+}
+Ans- 12 Infinite Loop
+13.int i = 1;
+while(i < 3) {
+    int j = 1;
+    while(j < 5) {
+        if(j == 3) {
+            break;
+        }
+        cout << j << " ";
+        j++;
+    }
+    i++;
+}
+Ans-1212
+14.int i = 1;
+while(i < 3) {
+    int j = 0;
+    while(j < 5) {
+        j++;
+        if(j == 3) {
+            continue;
+        }
+        cout << j << " ";
+    }
+    i++;
+}
+Ans-12451245
+15. Will following code generate error ?
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 10;
+    if(a > 5) {
+        int b = 10;
+    }
+    cout << b << endl;
+}
+Ans- Yes
+16. Will following code generate error ?
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 10;
+    if(a > 5) {
+        int a = 100;
+    }
+    cout << a << endl;
+}
+Ans- No
+17.What is the output ?
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 10;
+    if(a > 5) {
+        int a = 100;
+    }
+    else {
+        int a = 110;
+    }
+    cout << a << endl;
+}
+Ans- 10
+18.Will following code generate error ?
+#include <iostream>
+using namespace std;
+int main() {
+    for(int i = 0; i < 3; i++) {
+        cout << i << " ";
+    }
+    cout << i << " ";
+}
+Ans- Yes
+19.What is the output ?
+#include <iostream>
+using namespace std; 
+int main() {
+    int a = 10;
+    while(a > 5) {
+        int a = 1;
+        cout << a << " ";
+        a--;
+    }
+}
+Ans- Infinite Loop
