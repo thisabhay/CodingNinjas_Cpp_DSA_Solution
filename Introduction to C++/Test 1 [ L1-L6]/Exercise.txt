@@ -1,0 +1,33 @@
+1. Find the output.
+int p = 100;
+if(p > 20) {
+    if(p < 20) {
+        cout<<"coding";
+    }
+} else {
+    cout<<"ninjas";
+}
+Ans- No Output
+2. Write the correct order(s) of statements.
+We want to print "Coding Ninjas" 10 times.
+1.  while(x <= 10) {
+2.  int x = 1;
+3.  x += 1;
+4.  cout<<"Coding Ninjas"<<endl;
+5.  }
+Ans- 21345
+     21435
+3. Figure out the output
+int x = 10;
+while(x >= 0) {
+    x = x - 1;
+    cout<<x;
+    x--;
+}
+Ans- 97531-1
+4. This problem may have one or more correct answers
+a. a && b is true if either a or b is true
+b. (a || b) && c is true if c is true and either a or b is true 
+c. a && b is false if both a and b are true
+d. a || b is true if either a or b is true 
+Ans- a,b,d
