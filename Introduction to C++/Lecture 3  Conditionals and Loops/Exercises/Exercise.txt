@@ -1,0 +1,75 @@
+1. #include <iostream>
+using namespace std;
+int main()
+{
+    int x = 5; 
+    if (x < 6)
+        cout <<  “Hello ”;
+    if(x == 5){
+        cout << “Hi ”;
+    }
+    else { 
+        cout << “Hey ”;
+    } 
+}
+Ans- Hello Hi
+2. #include <iostream>
+using namespace std;
+int main() {
+    int x = 15;
+    if(x <= 15) {
+        cout << "Inside if ";
+    } else if(x == 15) {
+        cout << "Inside else if ";
+    }
+    cout << x;
+}
+Ans- Inside if
+3. #include <iostream>
+using namespace std; 
+int main()
+{
+        int var1 = 5; 
+        int var2 = 6;
+        if ((var2 = 1) == var1)
+           cout << var2;
+        else 
+            cout  << (var2 + 1); 
+}
+Ans- 2
+4. For what values of the x is an if-statement block not executed ?
+       if((1+x) != (1-x)) {
+          cout<<"In if block";
+         }
+Ans- 0
+5. #include <iostream>
+using namespace std;
+int main() {
+    int a = 10, b = 20, c = 100;
+    if(a <= b || c <= b) {
+        cout << "hello" << endl;
+    }
+    else if(a <= b || a <= c) {
+        cout << "hi" << endl;
+    }
+    else {
+        cout << "hey" << endl;
+    }
+}
+Ans- Hello
+6. #include <iostream>
+using namespace std;
+int main() {
+    int a = 10, b = 20, c = 30;
+    if(a <= b && !b) {
+        cout << "hello";
+    }
+    else if(c >= a && c >= b) {
+        cout << "hi";
+    }
+    else {
+        cout << "hey";
+    }
+}
+Ans- hi
+7. 
