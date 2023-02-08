@@ -1,0 +1,101 @@
+Output Questions
+1.What will be the output of the following code ?
+#include <iostream>
+using namespace std;
+int main(){
+    cout << code ;
+}
+Ans- Error
+2. What will be the output of the following code ?
+#include <iostream>
+using namespace std;
+int main(){
+    cout << "career" << "labs";
+}
+Ans- careerlabs
+3. Which of the following data type stores longest decimal number ?
+Ans- double
+4. Compiler assigns a garbage value to an uninitialised local variable in C++ Programming ?
+Ans- True
+5. What will be the output of following statements -
+bool a = true;
+cout << a;
+Ans- 1
+6. What is the output of the following code if the input is :
+5, 15 ?
+  #include <iostream>
+  using namespace std;
+  int main() {
+    int a, b; 
+    cin >> a;
+    cin >> b;
+    cout << (a+b);
+  }
+Ans- 20
+7.What is the output of the following code if the input is :
+2, 10.1, D ?
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    double d;
+    char c;
+    cin >> a >> d >> c;
+    cout << a << d << c << endl;
+}
+Ans- 210.1D
+8. What will be the output of following statement ? Consider that header files are already included in the code, and this line is written inside the main().
+ cout << (‘D’ + 1);
+Note: A character or integer without a space could be the corresponding answer value. Pay attention to the capital and lowercase letters.
+Note: You can refer the ASCII value table.
+Ans- 69
+9. What will be the output of following statement ? Consider that header files are already included in the code, and this line is written inside the main().
+int i = 'd';
+cout << i;
+Note-1: A character or integer without a space could be the corresponding answer value. Pay attention to the capital and lowercase letters.
+Note-2: You can refer the ASCII value table.
+Ans- 100
+10. What will be the output of following statement ? Consider that header files are already included in the code, and this line is written inside the main().
+char c = 74;
+cout << c;
+Note-1: A character or integer without a space could be the corresponding answer value. Pay attention to the capital and lowercase letters.
+Note-2: You can refer the ASCII value table.
+Ans- J
+11. What will be the output of following statement ? Consider that header files are already included in the code, and this line is written inside the main().
+int a = 10;
+char ch = 'a';
+ch = ch + a;
+cout << ch << endl;
+Note: A character or integer without a space could be the corresponding answer value. Pay attention to the capital and lowercase letters.
+Ans- k
+12. What will be the output ?
+#include <iostream>
+using namespace std;   
+int main()
+{
+    double a = 6 / 4;
+    int b  = 6 / 4;
+    double c = a + b;
+    cout << c;
+}
+Ans- 2
+13. #include <iostream>
+using namespace std;  
+int main()
+{
+    double a = 55.5;
+    int b = 55;
+    a = a % 10;
+    b = b % 10;
+    cout << a << " "  << b;
+}
+Ans- Syntax Error
+14. #include <iostream>
+using namespace std;
+int main() 
+{
+    int var1 = 5;
+    int var2 = 6;
+    cout << (var1 > var2);
+ }
+Ans- 0
