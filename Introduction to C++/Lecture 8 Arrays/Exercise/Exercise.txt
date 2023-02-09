@@ -1,0 +1,39 @@
+1. Which of the following correctly declares an array of size 10 ?
+Ans- int array[10];
+2. What will be the output of the following code ?
+int arr[100];
+cout << arr[0];
+Ans- 0 and Garbage value
+3. What is the index number of the last element of an array with 5 elements ?
+Ans- 4
+4. Which of the following accesses the third element stored in array?
+Ans- array[2]
+5. What is the correct syntax for passing array to a function -
+void func(int a[]) {
+}
+
+int main() {
+    int a[10];
+    // Call function "func" and pass array a
+}
+Ans- func(a);
+6. #include <iostream>
+using namespace std;
+int main() {
+    int a[10];
+    cout << sizeof(a) << endl;
+}
+Ans- 40
+7. Assume an integer takes 4 bytes and a pointer takes 8 bytes.
+#include <iostream>
+using namespace std;
+
+void func(int a[]) {
+    cout << sizeof(a) << endl;
+}
+
+int main() {
+    int a[10];
+    func(a);
+}
+Ans- 8
