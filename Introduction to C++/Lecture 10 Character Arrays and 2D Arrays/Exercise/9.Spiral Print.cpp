@@ -48,33 +48,44 @@ Sample Output 2:
 1 2 3 6 9 8 7 4 5 
 10 20 30 
 */
-void spiralPrint(int **input, int nRows, int nCols)
+void spiralPrint(int **input, int nRows, int mCols)
 {
-    int nElements = nRows * nCols;
-    int colStart, colEnd, rowStart, rowEnd, i, j;
-    colStart = 0;
-    colEnd = nCols - 1;
-    rowStart = 0;
-    rowEnd = nRows - 1;
-    while(nElements){
-        for(j = colStart;j <= colEnd; j++){
-            cout << input[rowStart][j] << ' ';
-            nElements--;
+    if (nRows == 0 || mCols == 0)
+    {
+        return;
+    }
+
+    int i, rowStart = 0, colStart = 0;
+
+    int numElements = nRows * mCols, count = 0;
+
+    while (count < numElements)
+    {
+        for (i = colStart; count < numElements && i < mCols; ++i)
+        {
+            cout << input[rowStart][i] << " ";
+            count++;
         }
         rowStart++;
-        for(i = rowStart;i <= rowEnd; i++){
-            cout << input[i][colEnd] << ' ';
-            nElements--;
+
+        for (i = rowStart; count < numElements && i < nRows; ++i)
+        {
+            cout << input[i][mCols - 1] << " ";
+            count++;
         }
-        colEnd--;
-        for(j = colEnd;j >= colStart; j--){
-            cout << input[rowEnd][j] << ' ';
-            nElements--;
+        mCols--;
+
+        for (i = mCols - 1; count < numElements && i >= colStart; --i)
+        {
+            cout << input[nRows - 1][i] << " ";
+            count++;
         }
-        rowEnd--;
-        for(i = rowEnd;i >= rowStart; i--){
-            cout << input[i][colStart] << ' ';
-            nElements--;
+        nRows--;
+
+        for (i = nRows - 1; count < numElements && i >= rowStart; --i)
+        {
+            cout << input[i][colStart] << " ";
+            count++;
         }
         colStart++;
     }
