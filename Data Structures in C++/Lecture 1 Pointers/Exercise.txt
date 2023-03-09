@@ -1,0 +1,138 @@
+1. Which of the following is the proper declaration of a pointer?
+
+int *x; 
+
+2. Which of the following gives the memory address of integer variable a ?
+
+&a; 
+
+3. Which of the following gives the memory address of variable 'b' pointed by pointer 'a' i.e.
+int b = 10;
+int *a = &b;
+
+a
+
+4.What will happen in this code?
+int a = 100, b = 200;
+int *p = &a, *q = &b;
+p = q;
+
+p now points to b
+
+5. What will be the output ?
+Send Feedback
+int a = 7;
+int b = 17;
+int *c = &b;
+*c = 7;
+cout  << a << "  “ << b << endl;
+
+7 7
+
+6.What will be the output ?
+Send Feedback
+ int a = 50;
+ int *ptr = &a;
+ int *q = ptr;
+ (*q)++;
+ cout << a  << endl;
+
+ 51
+
+7.  int a = 50;
+ int *ptr = &a;
+ cout << (*ptr)++ << “ “;
+ cout << a << endl;
+
+50 51
+
+8. What will be the output ?
+Send Feedback
+int *ptr = 0;
+int a = 10;
+*ptr = a;
+cout << *ptr << endl;
+
+Error
+
+9. Pointers Output
+Send Feedback
+What will be the output ?
+int a = 7; int b = 17; int *c = &b; *c = 7; cout << a << " “ << b << endl;
+
+7 7
+
+10. Pointers Output
+Send Feedback
+What will be the output ?
+float f = 10.5;
+float p = 2.5;
+float* ptr = &f;
+(*ptr)++;
+*ptr = p;
+cout << *ptr << “ “ << f << “ “ << p;
+
+2.5 2.5 2.5
+
+11. What is the output
+Send Feedback
+int a = 7;
+int *c = &a;
+c = c + 1;
+cout  << a << "  " << *c << endl;
+
+7 Garbage_value
+
+12. int a = 7;
+int *c = &a;
+c = c + 3;
+cout<< c << endl;
+
+412
+
+13.Assume memory address of variable ‘a’ is : 200 and a double variable is of size 8 bytes, what will be the output -
+double a = 10.54;
+double *d = &a;
+d = d + 1;
+cout  << d << endl;
+
+208
+
+14.int a[5];
+int *c;
+cout << sizeof(a) << “ “ << sizeof(c);
+
+20 8
+
+15. int a[] = {1, 2, 3, 4};
+cout << *(a) << " " << *(a+1);
+
+12
+
+16.int a[6] = {1, 2, 3};
+cout << a << “ “ << &a;
+
+200 200
+
+17. int a[3] = {1, 2, 3};
+cout << *(a + 2);
+
+3
+
+18.int a[6] = {1, 2, 3};
+int *b = a;
+cout << b[2];
+
+3
+
+19. int a[] = {1, 2, 3, 4, 5};
+cout << *(a) << " " << *(a + 4);
+
+1 5
+
+20. int a[] = {1, 2, 3, 4};
+int *p = a++;
+cout << *p << endl;
+
+Error
+
